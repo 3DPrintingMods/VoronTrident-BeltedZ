@@ -1,6 +1,6 @@
 # Voron Trident - Belted Z motion
 
-This `mod` is the combination of multiple ideas for belted system for the Trident Z motion. Most of the inspitarion came from X0, which uses Nema 17 gearboxes. The main goal was to use 9mm belts for Z motion while keeping most of the original Trident skirts and not relocating Z steppers to the top of the printer.
+This `mod` is the combination of multiple ideas for belted system for the Trident Z motion. Most of the inspitarion came from X0, which uses Nema 17 gearboxes. The main goal was to use 9mm belts for Z motion while keeping most of the original Trident skirts and not relocating Z steppers to the top of the printer. We give credit to `bythorsthunder` for his [Orion belted mod](https://github.com/bythorsthunder/Orion-Tri-Belt), which has also been proven efficient and easy to assemble (the same applies to the [belted z motion](https://github.com/MathematicalPotato/Voron_Mods/tree/main/VT_Belted_Z) mod introduced by `MathematicalPotato`).
 
 Created/Elaborated/Modified by `DoubleT` and `Genevamotion`
 

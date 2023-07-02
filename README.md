@@ -77,13 +77,13 @@ Mathematical Potato Idlers:
 
 DoubleT XYZ Idlers
  - Reuses existing fasteners for securing idler to Y extrusion
-4 - M3 heatset inserts
-4 - M3x30 Button head screws
-2 - M3x12 Socket head screws
-2 - M3x20 Socket head screws and hammerhead nuts
-2 - 5mm x 25mm dowel
-2 - 5mm x 20mm dowel
-4 - 6mm x 3mm magnets
+- 4 M3 heatset inserts
+- 4 M3x30 Button head screws
+- 2 M3x12 Socket head screws
+- 2 M3x20 Socket head screws and hammerhead nuts
+- 2 5mm x 25mm dowel
+- 2 5mm x 20mm dowel
+- 4 6mm x 3mm magnets
 
 
 

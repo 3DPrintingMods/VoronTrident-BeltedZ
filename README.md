@@ -40,10 +40,11 @@ DoubleT XYZ Idlers:
 Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
-## July 2nd Update:
+## July 2nd/3rd Update:
  - Revised rear motor mount and idler.  Orientation of the motor turned 90 degrees. New idler replaces the rear bracing from Z extrusion to A/B drive extrusion
  - New front idler option added. Integrated the Z idler pulley into DoubleT's modified Rama idlers.
  - Cleaned up the CAD
+ - Added motor skirts for 350mm build size
 
 ## Bill Of Materials
 

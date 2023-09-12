@@ -46,6 +46,10 @@ BOM contains sections for both.
  - Cleaned up the CAD
  - Added motor skirts for 350mm build size
 
+## Tiny-T considerations:
+The Tiny-T supports the use of either MGN9 or MGN12 linear guides on the X axis.  This mod is compatible with MGN12 / Afterburner/Stealthburner style toolheads without modificaiton.
+MGN9 based systems using V0.2 style toolheads will position the nozzle 5-6mm higher than AB/SB configurations.  The results in the bed being unable to reach the nozzle before colliding with the Z idlers.  Rather than modifying the Z carriages in a way that requires printing with supports, it is recommended that you add an additional 6mm of spacing between the build plate and the bed extrusions.
+
 ## Bill Of Materials
 
 Required parts:

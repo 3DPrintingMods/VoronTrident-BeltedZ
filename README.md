@@ -40,7 +40,13 @@ DoubleT XYZ Idlers:
 Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
-## July 2nd/3rd Update:
+## Update History:
+#October 12th 2023
+ - Raised the bed standoffs on the carriages by 6mm.
+ - This should improve compatibility with slimmer beds and most iterations of Tiny-T.
+ - NOTE: Requires a change from M5x16 to M5x25 fasteners for the carriage to the bed frame.
+
+#July 3rd 2023:
  - Revised rear motor mount and idler.  Orientation of the motor turned 90 degrees. New idler replaces the rear bracing from Z extrusion to A/B drive extrusion
  - New front idler option added. Integrated the Z idler pulley into DoubleT's modified Rama idlers.
  - Cleaned up the CAD
@@ -69,6 +75,7 @@ Required parts:
 - 1 5mmx30mm dowel (Rear Z Idler Shaft)
 - 20 M5x10 screws and hammerhead nuts for mounting motor mounts and idlers
 - 1 M3 x ? length screw - Length determined by motor chosen. Remove one screw from the nema17 motor housing and replace with longer screw for the rear motor stabilizer.
+- 3 M5x25 BHCS - Z carriage to bed frame
 
 <p align="left">
   <img src="images/Rear Motor Stab Screw.png" width="200">

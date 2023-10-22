@@ -145,36 +145,18 @@ DoubleT XYZ Idlers
 ## Sample config (Manta M8P) - Economy Gearbox 
 
 ```
-#####################################################################
-#   Z Stepper Settings
-#####################################################################
-
-##  Z0 Stepper - Front Left
-##  Connected to MOTOR_3
-##  Endstop connected to M3-STOP
 [stepper_z]
-step_pin: PD7
-dir_pin: !PD6
-enable_pin: !PF10
-# Rotation Distance for TR8x8 = 8, TR8x4 = 4, TR8x2 = 2
-rotation_distance: 7.75    
+step_pin: ###
+dir_pin: ###
+enable_pin: ###
+rotation_distance: 40
+gear_ratio: 57:11   
 microsteps: 32
-endstop_pin: PF5
-##  Z-position of nozzle (in mm) to z-endstop trigger point relative to print surface (Z0)
-##  (+) value = endstop above Z0, (-) value = endstop below
-##  Increasing position_endstop brings nozzle closer to the bed
-##  After you run Z_ENDSTOP_CALIBRATE, position_endstop will be stored at the very end of your config
-#position_endstop: -0.5
-## All builds use same Max Z
-position_max: 250
-position_min: -2.5
-homing_speed: 8.0 # Leadscrews are slower than 2.4, 10 is a recommended max.
-second_homing_speed: 3
-homing_retract_dist: 3
+endstop_pin: ###
 
 ##  Make sure to update below for your relevant driver (2208 or 2209)
 [tmc2209 stepper_z]
-uart_pin: PF9
+uart_pin: ###
 interpolate: False
 run_current: 1.0
 sense_resistor: 0.110

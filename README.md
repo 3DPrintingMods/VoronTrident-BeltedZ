@@ -41,6 +41,9 @@ Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
 ## Update History:
+#November 30th 2023
+ - V2 Beta idlers added
+
 #October 12th 2023
  - Raised the bed standoffs on the carriages by 6mm.
  - This should improve compatibility with slimmer beds and most iterations of Tiny-T.
@@ -114,7 +117,7 @@ DoubleT XYZ Idlers
 * [Annex Engineering](https://github.com/Annex-Engineering)
 * [Voron Design](https://github.com/VoronDesign)
 * [Ramalama](https://github.com/Ramalama2)
-
+* [clee](https://github.com/clee/VoronBFI)
 
 
 ## Images

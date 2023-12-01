@@ -41,6 +41,12 @@ Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
 ## Update History:
+
+#November 30th 2023
+ - Uploaded V2 beta of the revised DoubleT combined XYZ idlers.
+	- Inspired by imrovements demonstrated with Voron BFI (Beefy Front Idlers)
+	- Idler shuttle should be more durable and not fail under tension, which is possible with the rama style shuttle.
+
 #October 12th 2023
  - Raised the bed standoffs on the carriages by 6mm.
  - This should improve compatibility with slimmer beds and most iterations of Tiny-T.
@@ -90,12 +96,13 @@ Mathematical Potato Idlers:
 DoubleT XYZ Idlers
  - Reuses existing fasteners for securing idler to Y extrusion
 - 4 M3 heatset inserts
-- 4 M3x30 Button head screws
+- 4 M3x30 Button head screws (M3x35 recommended for V2, but 30mm should work)
 - 2 M3x12 Socket head screws
 - 2 M3x20 Socket head screws and hammerhead nuts
 - 2 5mm x 25mm dowel
 - 2 5mm x 20mm dowel
 - 4 6mm x 3mm magnets
+
 
 
 
@@ -111,6 +118,7 @@ DoubleT XYZ Idlers
 * [Annex Engineering](https://github.com/Annex-Engineering)
 * [Voron Design](https://github.com/VoronDesign)
 * [Ramalama](https://github.com/Ramalama2)
+* [Clee (BFI)](https://github.com/clee/VoronBFI)
 
 
 

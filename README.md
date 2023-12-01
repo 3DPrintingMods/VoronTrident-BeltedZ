@@ -31,7 +31,7 @@ MathmaticalPotato Idlers:
 
 DoubleT XYZ Idlers:
  - Modified version of the Ramalama2 idler design
- - Z idler pully integrated into XY idler
+ - Z idler pulley integrated into XY idler
  - More flexibility in Z pulley width
 <p align="left">
   <img src="images/DoubleT Idler.png" width="200">
@@ -41,16 +41,16 @@ Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
 ## Update History:
-
 #November 30th 2023
- - Uploaded V2 beta of the revised DoubleT combined XYZ idlers.
-	- Inspired by imrovements demonstrated with Voron BFI (Beefy Front Idlers)
-	- Idler shuttle should be more durable and not fail under tension, which is possible with the rama style shuttle.
+ - V2 Beta idlers added
 
 #October 12th 2023
  - Raised the bed standoffs on the carriages by 6mm.
  - This should improve compatibility with slimmer beds and most iterations of Tiny-T.
  - NOTE: Requires a change from M5x16 to M5x25 fasteners for the carriage to the bed frame.
+
+#July 23rd 2023 
+ - Added belt/stepper covers for inverted electronics by `Panzarkatten`
 
 #July 3rd 2023:
  - Revised rear motor mount and idler.  Orientation of the motor turned 90 degrees. New idler replaces the rear bracing from Z extrusion to A/B drive extrusion
@@ -60,7 +60,7 @@ BOM contains sections for both.
 
 ## Tiny-T considerations:
 The Tiny-T supports the use of either MGN9 or MGN12 linear guides on the X axis.  This mod is compatible with MGN12 / Afterburner/Stealthburner style toolheads without modificaiton.
-MGN9 based systems using V0.2 style toolheads will position the nozzle 5-6mm higher than AB/SB configurations.  This results in the bed being unable to reach the nozzle before colliding with the Z idlers.  Rather than modifying the Z carriages in a way that requires printing with supports, it is recommended that you add an additional 6mm of spacing between the build plate and the bed extrusions.
+MGN9 based systems using V0.2 style toolheads will position the nozzle 5-6mm higher than AB/SB configurations.  This results in the bed being unable to reach the nozzle before colliding with the Z idlers. V3 Z carriages should resolve this travel limitation, but this assumes the use of a 6mm build plate with a 1mm magnet.  Magbeds may need additional spacing.
 
 ## Bill Of Materials
 
@@ -96,13 +96,12 @@ Mathematical Potato Idlers:
 DoubleT XYZ Idlers
  - Reuses existing fasteners for securing idler to Y extrusion
 - 4 M3 heatset inserts
-- 4 M3x30 Button head screws (M3x35 recommended for V2, but 30mm should work)
+- 4 M3x30 Button head screws
 - 2 M3x12 Socket head screws
 - 2 M3x20 Socket head screws and hammerhead nuts
 - 2 5mm x 25mm dowel
 - 2 5mm x 20mm dowel
 - 4 6mm x 3mm magnets
-
 
 
 
@@ -118,8 +117,7 @@ DoubleT XYZ Idlers
 * [Annex Engineering](https://github.com/Annex-Engineering)
 * [Voron Design](https://github.com/VoronDesign)
 * [Ramalama](https://github.com/Ramalama2)
-* [Clee (BFI)](https://github.com/clee/VoronBFI)
-
+* [clee](https://github.com/clee/VoronBFI)
 
 
 ## Images
@@ -150,36 +148,18 @@ DoubleT XYZ Idlers
 ## Sample config (Manta M8P) - Economy Gearbox 
 
 ```
-#####################################################################
-#   Z Stepper Settings
-#####################################################################
-
-##  Z0 Stepper - Front Left
-##  Connected to MOTOR_3
-##  Endstop connected to M3-STOP
 [stepper_z]
-step_pin: PD7
-dir_pin: !PD6
-enable_pin: !PF10
-# Rotation Distance for TR8x8 = 8, TR8x4 = 4, TR8x2 = 2
-rotation_distance: 7.75    
+step_pin: ###
+dir_pin: ###
+enable_pin: ###
+rotation_distance: 40
+gear_ratio: 57:11   
 microsteps: 32
-endstop_pin: PF5
-##  Z-position of nozzle (in mm) to z-endstop trigger point relative to print surface (Z0)
-##  (+) value = endstop above Z0, (-) value = endstop below
-##  Increasing position_endstop brings nozzle closer to the bed
-##  After you run Z_ENDSTOP_CALIBRATE, position_endstop will be stored at the very end of your config
-#position_endstop: -0.5
-## All builds use same Max Z
-position_max: 250
-position_min: -2.5
-homing_speed: 8.0 # Leadscrews are slower than 2.4, 10 is a recommended max.
-second_homing_speed: 3
-homing_retract_dist: 3
+endstop_pin: ###
 
 ##  Make sure to update below for your relevant driver (2208 or 2209)
 [tmc2209 stepper_z]
-uart_pin: PF9
+uart_pin: ###
 interpolate: False
 run_current: 1.0
 sense_resistor: 0.110
@@ -197,6 +177,3 @@ stealthchop_threshold: 0
 </p>
 
 
-# Updates
-
-07/23 - Added belt/stepper covers for inverted electronics by `Panzarkatten`

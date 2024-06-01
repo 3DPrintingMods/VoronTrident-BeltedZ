@@ -41,6 +41,15 @@ Refer to the CAD drawing for detail on both Idlers.
 BOM contains sections for both.
 
 ## Update History:
+
+#May 31st 2024
+ - Added motor mounts and skirts for larger gearbox 'precision' motors
+ - NOTE:  These motors are recommended for larger bed sizes 300+
+ - Added Z idlers for DoubleT / Fabreeko 9MM metal gantry
+
+#April 2024
+ - Monolith Gantry Support added
+
 #November 30th 2023
  - V2 Beta idlers added
 
@@ -64,10 +73,17 @@ MGN9 based systems using V0.2 style toolheads will position the nozzle 5-6mm hig
 
 ## Bill Of Materials
 
-Required parts:
+#Required parts:
+
+- 3 NEMA 17 Precision planetary steppers
+	 - Recommended for larger bed sizes.
+	 - Higher Gear Ratio, lower backlash
+	 - [OMC Stepperonline](https://www.omc-stepperonline.com/nema-17-stepper-motor-l-40mm-gear-ratio-10-1-mg-series-planetary-gearbox-17hs15-1584s-mg10)
+*or*
 - 3 NEMA 17 Economy planetary steppers
 	- [Ali Express](https://www.aliexpress.us/item/3256804434852612.html)
 	- [Amazon](https://www.amazon.com/STEPPERONLINE-Planetary-Gearbox-Stepper-Printer/dp/B00WATUFIG)
+
 - 9mm GT2 belts
 - 3 9mm 20T GT2 drive pulleys, 8mm ID
 - 3 9mm 20T toothed idlers, 5mm ID - Gates/Runice recommended. (Overall width of less than 14mm, Flange diameter less than 16mm)
